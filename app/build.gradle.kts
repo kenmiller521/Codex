@@ -36,7 +36,6 @@ android {
             isDebuggable = false
             isJniDebuggable = false
             isRenderscriptDebuggable = false
-            isZipAlignEnabled = true
         }
 
         debug {
@@ -44,7 +43,6 @@ android {
             isJniDebuggable = false
             isRenderscriptDebuggable = false
             isMinifyEnabled = false
-            isZipAlignEnabled = true
 
             if (project.hasProperty("devBuild")) {
                 aaptOptions.cruncherEnabled = false
@@ -57,7 +55,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
-        useIR = true
     }
     buildFeatures {
         compose = true
