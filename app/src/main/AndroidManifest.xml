@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zil.codex" >
+    package="com.zil.codex">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,12 +11,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Codex" >
+        android:theme="@style/Theme.Codex">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".features.home.activities.HomeActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Codex.NoActionBar" >
+            android:theme="@style/Theme.Codex.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
