@@ -96,6 +96,7 @@ dependencies {
 
     /** Coil */
     implementation("io.coil-kt:coil:$coil_version")
+    implementation("io.coil-kt:coil-compose:$coil_version")
 
     /** Room */
     implementation("androidx.room:room-runtime:$room_version")

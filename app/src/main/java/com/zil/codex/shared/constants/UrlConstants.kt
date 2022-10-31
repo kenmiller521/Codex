@@ -1,5 +1,6 @@
 package com.zil.codex.shared.constants
 
 object UrlConstants {
-	val baseMTGRetrofitUrl = "mtgjson.com/api/v5/"
+	val baseMTGRetrofitUrl = "https://mtgjson.com/"
+	val scryfallBaseUrl = "https://api.scryfall.com/cards/"
 }
