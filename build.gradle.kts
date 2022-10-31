@@ -2,7 +2,7 @@
 buildscript {
     extra["kotlin_version"] = "1.9.0"
     extra["room_version"] = "2.3.0"
-    extra["coil_version"] = "1.3.2"
+    extra["coil_version"] = "2.2.1"
     extra["nav_version"] = "2.3.5"
     extra["lifecycle_version"] = "2.3.1"
     extra["hilt_version"] = "2.44"
