@@ -1,4 +1,4 @@
-package com.zil.codex.shared.composables.atoms.hilt.modules
+package com.zil.codex.shared.hilt.modules
 
 import com.google.gson.GsonBuilder
 import com.zil.codex.BuildConfig
@@ -88,6 +88,6 @@ object ApiModule {
 	fun providesHttpLoggingInterceptor(): HttpLoggingInterceptor =
 		HttpLoggingInterceptor()
 			.apply {
-				level = HttpLoggingInterceptor.Level.BODY
+				level = HttpLoggingInterceptor.Level.BASIC
 			}
 }

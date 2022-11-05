@@ -29,7 +29,6 @@ class HomeActivity : AppCompatActivity() {
 	fun initViewModel() {
 		viewModel.testMute.observe(this, Observer {
 			if(it != null) {
-				Log.d("zxcv", "ACTIVITY MUTE :$it")
 				viewModel.testMute.value = null
 			}
 		})

@@ -17,8 +17,8 @@ class HomeActivityViewModel @Inject constructor(
 	fun activitytest() {
 		viewModelScope.launch(Dispatchers.Main){
 			try{
-				val text = cardRepository.fetchCard()
-				testMute.value = "ACTIVITY $text"
+				//val text = cardRepository.fetchCard()
+				//testMute.value = "ACTIVITY $text"
 			}
 			catch(e:Exception) {
 
