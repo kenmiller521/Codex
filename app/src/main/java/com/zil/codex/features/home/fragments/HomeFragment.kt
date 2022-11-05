@@ -37,12 +37,23 @@ class HomeFragment : Fragment() {
 	private fun initView() {
 		binding.composeView.setContent {
 			HomeScreen(
-				dataState = viewModel.dataState
-			) {
-				lifecycleScope.launch {
-					viewModel.dataIntent.send(DataIntent.FetchData)
+				dataState = viewModel.dataState,
+				onFetch = {
+					lifecycleScope.launch {
+						viewModel.dataIntent.send(DataIntent.FetchData)
+					}
+				},
+				onFetchAllPrintings = {
+					lifecycleScope.launch {
+						viewModel.dataIntent.send(DataIntent.FetchAllPrintings)
+					}
+				},
+				onMTGSetClick = {
+					lifecycleScope.launch{
+						viewModel.dataIntent.send(DataIntent.FetchSet(it))
+					}
 				}
-			}
+			)
 		}
 	}
 

@@ -1,6 +1,5 @@
 package com.zil.codex.shared.composables.atoms
 
-import android.util.Log
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.CircularProgressIndicator
@@ -22,7 +21,6 @@ fun MTGCardComposable(
 ) {
 
 	val isLoadingImage = remember { mutableStateOf(true) }
-	Log.d("zxcv","Card Name: $cardName / $scryfallImageUrl")
 	Box(
 		modifier = Modifier.fillMaxSize(),
 		contentAlignment = Alignment.Center
